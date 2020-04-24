@@ -22,12 +22,14 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter.js';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontSize.js';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js'
 
 export default class Editor extends ClassicEditor {}
 
@@ -52,12 +54,14 @@ Editor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	Base64UploadAdapter,
+	FontSize,
 	FontFamily,
 	HorizontalLine,
 	ImageResize,
 	Underline,
 	Essentials,
-	Paragraph
+	Paragraph,
+	Alignment
 ];
 
 Editor.defaultConfig = {
