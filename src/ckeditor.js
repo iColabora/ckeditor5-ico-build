@@ -61,6 +61,30 @@ Editor.builtinPlugins = [
 ];
 
 Editor.defaultConfig = {
+	fontSize: {
+        options: [
+            9,
+            11,
+            13,
+            'default',
+            17,
+            19,
+            21
+        ]
+    },
+    fontFamily: {
+        options: [
+            'default',
+		    'Arial, Helvetica, sans-serif',
+		    'Courier New, Courier, monospace',
+		    'Georgia, serif',
+		    'Lucida Sans Unicode, Lucida Grande, sans-serif',
+		    'Tahoma, Geneva, sans-serif',
+		    'Times New Roman, Times, serif',
+		    'Trebuchet MS, Helvetica, sans-serif',
+		    'Verdana, Geneva, sans-serif'
+        ]
+    },
     toolbar: {
 		items: [
 		    'heading',
@@ -70,6 +94,14 @@ Editor.defaultConfig = {
 		    'link',
 		    'bulletedList',
 		    'numberedList',
+		    '|',
+		    'fontSize',
+		    'fontFamily',
+		    '|',
+		    'alignment:left',
+		    'alignment:right',
+		    'alignment:center',
+		    'alignment:justify',
 		    '|',
 		    'indent',
 		    'outdent',
